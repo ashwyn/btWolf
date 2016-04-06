@@ -41,5 +41,8 @@ chrome.bluetooth.startDiscovery(function() {
   // Stop discovery after 30 seconds.
   setTimeout(function() {
     chrome.bluetooth.stopDiscovery(function() {});
+
+    console.log("Bluetooth discovery completed!")
   }, 120000);
+
 });
